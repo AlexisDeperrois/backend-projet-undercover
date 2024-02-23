@@ -1,0 +1,121 @@
+# config/routes/api.yaml
+api_login:
+    path: '/api/login'
+    controller: App\Controller\ApiLoginController::index
+    methods: ['POST']
+    
+api_register:
+    path: '/api/register'
+    controller: App\Controller\RegistrationController::register
+    methods: ['POST']
+
+api_logout:
+    path: '/api/logout'
+    controller: App\Controller\ApiLoginController::logout
+    methods: 'POST'
+
+api_get_current_user:
+    path: '/api/user'
+    controller: App\Controller\UserController::getCurrentUser
+    methods: 'GET'
+
+api_get_user_by_id:
+    path: '/api/user/{id}'
+    controller: App\Controller\UserController::getUserById
+    methods: 'GET'
+
+api_get_users_by_search:
+    path: '/api/users/{params}'
+    controller: App\Controller\UserController::searchUsersWithPseudo
+    methods: 'GET'
+
+api_check_available_pseudo:
+    path: '/api/user/checkpseudo/{params}'
+    controller: App\Controller\UserController::checkIfAvalaiblePseudo
+    methods: 'GET'
+
+api_user_confirmation_password:
+    path: '/api/user/confirmpassword/{params}'
+    controller: App\Controller\UserController::passwordConfirmation
+    methods: 'GET'
+
+api_user_edit:
+    path: '/api/user'
+    controller: App\Controller\UserController::editUser
+    methods: 'POST'
+
+
+#Route friends
+app_friend_send_request:
+    path: '/api/friend/sendrequest'
+    controller: App\Controller\FriendController::sendFriendRequest
+    methods: 'POST'
+
+app_friend_answer_request:
+    path: '/api/friend/answerrequest'
+    controller: App\Controller\FriendController::answerFriendRequest
+    methods: 'POST'
+
+app_friend_remove:
+    path: '/api/friend/remove'
+    controller: App\Controller\FriendController::removeFriend
+    methods: 'POST'
+
+
+
+
+
+# Routes API pour mes ROOMS
+api_room_create:
+    path: '/api/room/create'
+    controller: App\Controller\RoomController::createRoom
+    methods: 'POST'
+
+api_room_edit:
+    path: '/api/room/edit'
+    controller: App\Controller\RoomController::editRoom
+    methods: 'POST'
+
+api_join_room_by_code:
+    path: 'api/room/{roomCode}'
+    controller: App\Controller\RoomController::joinRoom
+    methods: 'GET'
+
+api_leave_room:
+    path: 'api/room/leave/{id}'
+    controller: App\Controller\RoomController::leaveRoom
+    methods: 'GET'
+
+
+#routes Games
+
+api_game_start:
+    path: '/api/game/start'
+    controller: App\Controller\GameController::start
+    methods: 'POST'
+
+api_game_send_vote:
+    path: '/api/game/vote'
+    controller: App\Controller\GameController::sendVote
+    methods: 'POST'
+
+api_game_send_hint:
+    path: '/api/game/hint'
+    controller: App\Controller\GameController::sendHint
+    methods: 'POST'
+
+
+
+
+
+# routes chat
+api_chat_sendMessage:
+    path: '/api/chat'
+    controller: App\Controller\ChatController::sendMessage
+    methods: 'POST'
+
+
+
+
+
+

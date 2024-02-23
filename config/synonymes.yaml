@@ -1,0 +1,84 @@
+animal_de_compagnie:
+    - Chat
+    - Chien
+    - hamster
+    -
+
+Chapeau:
+    - Casquette
+    - Cagoule
+    - Bonnet
+    - Béret
+
+félin:
+    - Lion
+    - Jaguar
+    - Guépard
+    - Tigre
+    - Puma
+
+smartphone:
+    - Iphone
+    - Samsung
+
+ville_francaise:
+    - Paris
+    - Marseille
+    - Lyon
+    - Lille
+    - Rennes
+
+Sport:
+    - Football
+    - Handball
+    - Rugby
+    - Musculation
+    - Basketball
+    - Volleyball
+    - Crossfit
+    - Baseball
+
+métaux:
+    - Argent
+    - Or
+    - Cuivre
+    - Bronze
+
+
+pays_europe:
+    - france
+    - angleterre
+    - allemagne
+    - espagne
+    - belgique
+    - italie
+
+plats:
+    - raclette
+    - tartiflette
+    - fondue savoyarde
+
+Framework :
+    - Symfony
+    - React
+
+Fruits:
+    - Pomme
+    - Poire
+    - peche
+    - banane
+
+super_heros:
+    - Spider Man
+    - Batman
+    - Superman
+    - Iron Man
+
+équidés:
+    - âne
+    - cheval
+    - zebre
+
+
+
+    
